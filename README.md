@@ -24,4 +24,11 @@ oCert = oXmlSignature.obterCertificadoRepositorio("D:\atm.pfx","1234")
 ```ruby
 oXmlSignature.geraAssinaturaDigitalXML("D:\","D:\TesteBaga","D:\Teste.xml",oCert,.t.)
 ```
-* Primeiro parâmetro: Caminho padrão onde ficarão salvos
+  * Primeiro parâmetro: Caminho padrão onde será salvo o xml final, de nome "testeee.xml";
+  * Segundo parâmetro:  Caminho caminho onde será gerado o xml assinado e compactado (formato .zip);
+  * Terceiro parâmetro: Caminho onde será coletado o XML inicial, antes de ser assinado;
+  * Quarto parâmetro:   Objeto certificado carregado com o método `obterCertificadoRepositorio`;
+  * Quinto parâmetro:   Indica se deve ser gerado xml final com Hash, para casos de ECF (caso seja passado `false`, o xml será apenas assinado, nao gerado hash e envelopamento final)
+    
+
+
