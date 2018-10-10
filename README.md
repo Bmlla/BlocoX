@@ -9,4 +9,12 @@ Pode-se resumir o Bloco X em 3 etapas:
 
 No exemplo abaixo, utilizamos a liguagem Visual FoxPro 9 para implementar a DLL feita em C#.
 
-* Primeiro devemos chamar o método `obterCertificadoRepositorio`
+* Instanciando a DLL:
+~~~
+DECLARE XmlSignature IN "D:\Bases\NXS\Detoni\XmlSignature.dll"
+oXmlSignature = CREATEOBJECT("XmlSignature.AssinadorXML")
+~~~
+
+* Primeiro devemos chamar o método `obterCertificadoRepositorio` para carregarmos o certificado em um objeto:
+
+
