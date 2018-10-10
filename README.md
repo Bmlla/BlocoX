@@ -1,4 +1,4 @@
-# Bloco X
+# Bloco X - PAF-ECF
 Bloco X - Assinatura e geração de XML Hash
 
 Pode-se resumir o Bloco X em 3 etapas:
